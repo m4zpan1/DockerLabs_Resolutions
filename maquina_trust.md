@@ -46,13 +46,13 @@ sudo nmap -p- -sS -sC --open -sV --min-rate=5000 -n -vvv -Pn 172.18.0.2 -oN /hom
 
 ## 📊 Resultado del escaneo
 
-🖼️ **IMAGEN**
+![captura-login](https://raw.githubusercontent.com/m4zpan1/DockerLabs_Resolutions/refs/heads/main/RECURSOS/trust%201.png)
 
 🔍 Observamos que los puertos **22 (SSH)** y **80 (HTTP)** están abiertos.
 
 🌐 Al ingresar la dirección IP `172.18.0.2` nos muestra la página por defecto de **Apache**.
 
-🖼️ **IMAGEN**
+![captura-login](https://raw.githubusercontent.com/m4zpan1/DockerLabs_Resolutions/refs/heads/main/RECURSOS/trust%202.png)
 
 ---
 
@@ -71,11 +71,11 @@ gobuster dir -u http://172.18.0.2/ -w /usr/share/wordlists/dirbuster/directory-l
 - `-w ...` → Diccionario de palabras   
 - `-x html,php,sh,py` → Extensiones a probar 
 
-🖼️ **IMAGEN**
+![captura-login](https://raw.githubusercontent.com/m4zpan1/DockerLabs_Resolutions/refs/heads/main/RECURSOS/trust%203.png)
 
 Descubrimos el archivo `/secret.php`, el cual revela información útil:
 
-🖼️ **IMAGEN**
+![captura-login](https://raw.githubusercontent.com/m4zpan1/DockerLabs_Resolutions/refs/heads/main/RECURSOS/trust%204.png)
 
 ---
 
@@ -87,7 +87,7 @@ Con el posible usuario `mario`, lanzamos un ataque de fuerza bruta con **Hydra**
 hydra -l mario -P /usr/share/wordlists/rockyou.txt ssh://172.18.0.2 -t 50
 ```
 
-🖼️ **IMAGEN**
+![captura-login](https://raw.githubusercontent.com/m4zpan1/DockerLabs_Resolutions/refs/heads/main/RECURSOS/trust%205%20.png)
 
 🔐 Ahora tenemos las credenciales:
 
