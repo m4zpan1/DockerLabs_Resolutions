@@ -50,6 +50,7 @@ sudo nmap -p- -sS -sC --open -sV --min-rate=5000 -n -vvv -Pn 172.18.0.2 -oN /hom
 
 🔍 Observamos que los puertos **22 (SSH)** y **80 (HTTP)** están abiertos.
 
+
 🌐 Al ingresar la dirección IP `172.18.0.2` nos muestra la página por defecto de **Apache**.
 
 ![captura-login](https://raw.githubusercontent.com/m4zpan1/DockerLabs_Resolutions/refs/heads/main/RECURSOS/trust%202.png)
