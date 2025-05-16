@@ -54,7 +54,7 @@ Observamos que los puertos **22 (SSH)** y **80 (HTTP)** están abiertos.
 
 Colocamos la dirección IP `172.17.0.2` en el navegador 🌍. Nos pedirá usuario y contraseña:
 
-![captura-login](https://raw.githubusercontent.com/m4zpan1/DockerLabs_Resolutions/refs/heads/main/injection%201.png)
+![captura-login](https://raw.githubusercontent.com/m4zpan1/DockerLabs_Resolutions/refs/heads/main/RECURSOS/injection%201.png)
 
 ---
 
@@ -66,7 +66,7 @@ Probamos un ataque de **inyección SQL**:
 'or 1=1-- - 
 ```
 
-![captura-login](https://raw.githubusercontent.com/m4zpan1/DockerLabs_Resolutions/refs/heads/main/injection%202.png)
+![captura-login](https://raw.githubusercontent.com/m4zpan1/DockerLabs_Resolutions/refs/heads/main/RECURSOS/injection%202.png)
 
 🔐 Obtuvimos credenciales:
 
@@ -75,7 +75,7 @@ user : dylan
 contraseña: KJSDFG789FGSDF78
 ```
 
-![captura-login](https://raw.githubusercontent.com/m4zpan1/DockerLabs_Resolutions/refs/heads/main/injection%203.png)
+![captura-login](https://raw.githubusercontent.com/m4zpan1/DockerLabs_Resolutions/refs/heads/main/RECURSOS/injection%203.png)
 
 ---
 
