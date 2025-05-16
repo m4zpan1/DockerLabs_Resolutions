@@ -1,7 +1,7 @@
 # Máquina Injection
 - Dificultad: muy fácil
 
-# Comprobamos si tenemos conexión:
+# Comprobamos la conexión:
 <p>Primero comprobaremos si tenemos conexión con la maquina Injection: </p>
 
 ```
